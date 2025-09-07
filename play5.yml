@@ -1,0 +1,13 @@
+---
+- name: demonstrate file module
+  hosts: localhost
+  become: true
+  tasks:
+   - name: Create an empty file
+     file:
+      path: /etc/picsdir
+      state: directory
+      owner: root
+      group: root
+      mode: '0640'
+...
