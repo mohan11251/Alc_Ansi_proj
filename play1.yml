@@ -4,7 +4,6 @@
   become: true
   become_user: root
   tasks:
-  task_user: ansible
    - name: Create User
      user:
       name: alc-mohan
